@@ -1,4 +1,4 @@
-import SignupModal from '../../../../../components/beforeLogin/SignupModal/SignupModal';
+import SignupModal from '../../../_components/SignupModal/SignupModal';
 
 export default function SignupPage() {
 	return <SignupModal />;
