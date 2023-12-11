@@ -1,5 +1,5 @@
 :root {
-	// colors
+	// base colors
 	--primary: #{$primary};
 	--black: #{$black};
 	--dark_gray: #{$dark_gray};
@@ -7,4 +7,8 @@
 	--extra_light_gray: #{$extra_light_gray};
 	--extra_extra_light_gray: #{$extra_extra_light_gray};
 	--white: #{$white};
+
+	// global variable
+	--global-bg-color: var(--white);
+	--global-color: var(--black);
 }

@@ -11,5 +11,17 @@
 @import 'utils/function';
 @import 'utils/mixin';
 
+html,
 body {
+	width: 100dvw;
+	height: 100dvh;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: var(--global-bg-color);
+	color: var(--global-color);
 }
