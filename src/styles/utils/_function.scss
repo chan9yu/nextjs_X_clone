@@ -1,0 +1,31 @@
+@use 'sass:map';
+
+/* 투명도 값을 포함한 색상을 반환하는 함수 */
+@function get-opacity-color($hexcode, $opacity-key) {
+	$opacity-values: (
+		0: '00',
+		5: '0c',
+		10: '19',
+		15: '26',
+		20: '33',
+		25: '3f',
+		30: '4c',
+		35: '59',
+		40: '66',
+		45: '72',
+		50: '7f',
+		55: '8c',
+		60: '99',
+		65: 'a5',
+		70: 'b2',
+		75: 'bf',
+		80: 'cc',
+		85: 'd8',
+		90: 'e5',
+		95: 'f2',
+		100: 'ff'
+	);
+	$opacity-value: map.get($opacity-values, $opacity-key);
+
+	@return #{$hexcode}#{$opacity-value};
+}
