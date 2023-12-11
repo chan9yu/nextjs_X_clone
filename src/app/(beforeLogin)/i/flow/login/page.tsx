@@ -1,3 +1,5 @@
+import LoginModal from '../../../../../components/beforeLogin/LoginModal/LoginModal';
+
 export default function LoginPage() {
-	return <div>LoginPage</div>;
+	return <LoginModal />;
 }

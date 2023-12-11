@@ -1,9 +1,5 @@
-import Link from 'next/link';
-
-import XLogoIcon from '../../../../../components/ui/icons/XLogoIcon';
-import { APP_URL } from '../../../../../constants/route';
-import styles from './page.module.css';
+import SignupModal from '../../../../../components/beforeLogin/SignupModal/SignupModal';
 
 export default function SignupPage() {
-	return <div>SignupPage</div>;
+	return <SignupModal />;
 }
