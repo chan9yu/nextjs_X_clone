@@ -1,3 +1,7 @@
+// utils
+@import 'utils/function';
+@import 'utils/mixin';
+
 // foundation
 @import 'foundation/color';
 @import 'foundation/typography';
@@ -6,10 +10,6 @@
 // base
 @import 'base/reset';
 @import 'base/root';
-
-// utils
-@import 'utils/function';
-@import 'utils/mixin';
 
 html,
 body {
