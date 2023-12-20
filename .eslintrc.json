@@ -10,8 +10,7 @@
     "next/core-web-vitals",
     "plugin:prettier/recommended",
     "plugin:react-hooks/recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:storybook/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "plugins": [],

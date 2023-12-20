@@ -1,4 +1,5 @@
-@import '../../../styles/utils/function';
+@import '../../../../styles/utils/function';
+@import '../../../../styles/utils/mixin';
 
 .content {
 	height: inherit;
@@ -19,8 +20,8 @@
 }
 
 .right-wrapper {
+	min-width: 45vw;
 	height: inherit;
-	flex: 1;
 	display: flex;
 	align-items: center;
 	padding: 16px;
@@ -50,6 +51,7 @@
 }
 
 .button {
+	@include flexbox-center;
 	width: 300px;
 	max-width: 380px;
 	height: 40px;
@@ -57,9 +59,6 @@
 	transition: background-color 0.2s;
 	margin-bottom: 8px;
 	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	text-decoration: none;
 	font-weight: 700;
 	background-color: #1d9bf0;

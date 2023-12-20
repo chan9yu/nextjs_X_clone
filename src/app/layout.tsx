@@ -2,7 +2,6 @@ import { Metadata } from 'next';
 import { Open_Sans } from 'next/font/google';
 
 import type { ChildrenProps } from '../@types/common';
-import '../styles/global.scss';
 
 const openSans = Open_Sans({ subsets: ['latin'] });
 
