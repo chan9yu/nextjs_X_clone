@@ -1,28 +1,26 @@
 import Link from 'next/link';
 
+import { APP_URL } from '../../../constants/route-constants';
 import XLogoIcon from '../../ui/icons/XLogoIcon';
-import { APP_URL } from '../../../constants/route';
-import styles from './Main.module.scss';
+import styles from './Main.module.css';
 
 export default function Main() {
 	return (
-		<section className={styles.content}>
-			<div className={styles['left-wrapper']}>
+		<>
+			<div className={styles.left}>
 				<XLogoIcon />
 			</div>
-			<div className={styles['right-wrapper']}>
-				<div className={styles['right-wrapper__inner']}>
-					<h1 className={styles['title']}>지금 일어나고 있는 일</h1>
-					<h2 className={styles['sub-title']}>지금 가입하세요.</h2>
-					<Link className={styles['button']} href={APP_URL.SIGNUP}>
-						계정 만들기
-					</Link>
-					<h3 className={styles['text']}>이미 트위터에 가입하셨나요?</h3>
-					<Link className={styles['sub-button']} href={APP_URL.LOGIN}>
-						로그인
-					</Link>
-				</div>
+			<div className={styles.right}>
+				<h1>지금 일어나고 있는 일</h1>
+				<h2>지금 가입하세요.</h2>
+				<Link href={APP_URL.SIGNUP} className={styles.signup}>
+					계정 만들기
+				</Link>
+				<h3>이미 트위터에 가입하셨나요?</h3>
+				<Link href={APP_URL.LOGIN} className={styles.login}>
+					로그인
+				</Link>
 			</div>
-		</section>
+		</>
 	);
 }
