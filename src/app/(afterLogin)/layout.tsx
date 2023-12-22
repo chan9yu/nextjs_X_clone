@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { ReactNode } from 'react';
 
 import type { ChildrenProps } from '../../@types/common';
 import FollowSection from '../../components/afterLogin/FollowSection';
@@ -10,7 +11,11 @@ import XLogoIcon from '../../components/icons/XLogoIcon';
 import { APP_URL } from '../../constants/route-constants';
 import styles from './layout.module.css';
 
-export default function AfterLoginLayout({ children }: ChildrenProps) {
+type AfterLoginLayoutProps = ChildrenProps & {
+	modal?: ReactNode;
+};
+
+export default function AfterLoginLayout({ children, modal }: AfterLoginLayoutProps) {
 	return (
 		<div className={styles.container}>
 			<header className={styles.leftSectionWrapper}>
@@ -41,6 +46,7 @@ export default function AfterLoginLayout({ children }: ChildrenProps) {
 					</section>
 				</div>
 			</div>
+			{modal}
 		</div>
 	);
 }

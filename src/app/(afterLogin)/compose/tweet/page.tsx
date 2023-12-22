@@ -1,3 +1,11 @@
+import TweetModal from '../../../../components/tweet/TweetModal';
+import HomePage from '../../home/page';
+
 export default function TweetPage() {
-	return <div>TweetPage</div>;
+	return (
+		<>
+			<HomePage />
+			<TweetModal />
+		</>
+	);
 }
