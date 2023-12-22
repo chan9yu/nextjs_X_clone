@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-import { HOME_TAB } from '../../../../constants/home-constants';
+import { HOME_TAB } from '../../../constants/home-constants';
 import styles from './Tab.module.css';
 
 export default function Tab() {

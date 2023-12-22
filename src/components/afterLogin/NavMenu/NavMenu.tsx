@@ -4,14 +4,14 @@ import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
 import { APP_URL, URL_SEGMENT } from '../../../constants/route-constants';
-import ExploreFillIcon from '../../ui/icons/ExploreFillIcon';
-import ExploreIcon from '../../ui/icons/ExploreIcon';
-import HomeFillIcon from '../../ui/icons/HomeFillIcon';
-import HomeIcon from '../../ui/icons/HomeIcon';
-import MessageFillIcon from '../../ui/icons/MessageFillIcon';
-import MessageIcon from '../../ui/icons/MessageIcon';
-import UserFillIcon from '../../ui/icons/UserFillIcon';
-import UserIcon from '../../ui/icons/UserIcon';
+import ExploreFillIcon from '../../icons/ExploreFillIcon';
+import ExploreIcon from '../../icons/ExploreIcon';
+import HomeFillIcon from '../../icons/HomeFillIcon';
+import HomeIcon from '../../icons/HomeIcon';
+import MessageFillIcon from '../../icons/MessageFillIcon';
+import MessageIcon from '../../icons/MessageIcon';
+import UserFillIcon from '../../icons/UserFillIcon';
+import UserIcon from '../../icons/UserIcon';
 import NavItem from '../NavItem';
 import styles from './NavMenu.module.css';
 

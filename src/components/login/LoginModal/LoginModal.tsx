@@ -3,7 +3,7 @@
 import { useRouter } from 'next/navigation';
 import { ChangeEventHandler, FormEventHandler, useState } from 'react';
 
-import CloseIcon from '../../ui/icons/CloseIcon';
+import CloseIcon from '../../icons/CloseIcon';
 import styles from './LoginModal.module.css';
 
 export default function LoginModal() {

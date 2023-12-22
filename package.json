@@ -29,6 +29,7 @@
 		"husky:permission": "chmod +x .husky/*"
 	},
 	"dependencies": {
+		"classnames": "^2.3.2",
 		"dayjs": "^1.11.10",
 		"next": "14.0.3",
 		"react": "^18.2.0",

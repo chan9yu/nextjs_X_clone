@@ -4,7 +4,7 @@ import { useRouter } from 'next/navigation';
 import { ChangeEventHandler, FormEventHandler, useState } from 'react';
 
 import { APP_URL } from '../../../constants/route-constants';
-import CloseIcon from '../../ui/icons/CloseIcon';
+import CloseIcon from '../../icons/CloseIcon';
 import styles from './SignupModal.module.css';
 
 export default function SignupModal() {

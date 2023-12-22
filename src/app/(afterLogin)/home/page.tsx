@@ -1,6 +1,6 @@
 import Post from '../../../components/afterLogin/Post';
-import PostForm from '../../../components/afterLogin/home/PostForm';
-import Tab from '../../../components/afterLogin/home/Tab';
+import PostForm from '../../../components/home/PostForm';
+import Tab from '../../../components/home/Tab';
 import TabProvider from '../../../context/TabProvider';
 import styles from './page.module.css';
 

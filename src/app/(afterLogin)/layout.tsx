@@ -5,8 +5,8 @@ import FollowSection from '../../components/afterLogin/FollowSection';
 import LogoutButton from '../../components/afterLogin/LogoutButton';
 import NavMenu from '../../components/afterLogin/NavMenu';
 import TrendSection from '../../components/afterLogin/TrendSection';
-import SearchIcon from '../../components/ui/icons/SearchIcon';
-import XLogoIcon from '../../components/ui/icons/XLogoIcon';
+import SearchIcon from '../../components/icons/SearchIcon';
+import XLogoIcon from '../../components/icons/XLogoIcon';
 import { APP_URL } from '../../constants/route-constants';
 import styles from './layout.module.css';
 

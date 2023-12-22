@@ -1,4 +1,4 @@
-import LoginModal from '../../../../../components/beforeLogin/LoginModal';
+import LoginModal from '../../../../../components/login/LoginModal';
 
 export default function LoginPage() {
 	return <LoginModal />;

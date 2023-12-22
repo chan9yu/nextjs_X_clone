@@ -1,7 +1,7 @@
 import Link from 'next/link';
 
 import { APP_URL } from '../../../constants/route-constants';
-import XLogoIcon from '../../ui/icons/XLogoIcon';
+import XLogoIcon from '../../icons/XLogoIcon';
 import styles from './Main.module.css';
 
 export default function Main() {
