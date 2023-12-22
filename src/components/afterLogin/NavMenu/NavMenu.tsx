@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useSelectedLayoutSegment } from 'next/navigation';
 
+import { me } from '../../../constants/dummy-constants';
 import { APP_URL, URL_SEGMENT } from '../../../constants/route-constants';
 import ExploreFillIcon from '../../icons/ExploreFillIcon';
 import ExploreIcon from '../../icons/ExploreIcon';
@@ -14,14 +15,6 @@ import UserFillIcon from '../../icons/UserFillIcon';
 import UserIcon from '../../icons/UserIcon';
 import NavItem from '../NavItem';
 import styles from './NavMenu.module.css';
-
-// dummy
-const me = {
-	id: 'jebong',
-	nickname: '박제봉',
-	image:
-		'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png'
-};
 
 export default function NavMenu() {
 	const segment = useSelectedLayoutSegment();

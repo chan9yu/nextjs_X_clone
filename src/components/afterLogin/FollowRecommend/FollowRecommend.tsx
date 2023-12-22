@@ -1,12 +1,7 @@
 'use client';
 
+import { user } from '../../../constants/dummy-constants';
 import styles from './FollowRecommend.module.css';
-
-const user = {
-	id: 'danmuji',
-	nickname: '단무지',
-	image: 'https://img.hani.co.kr/imgdb/resize/2009/0203/123354307085_20090203.JPG'
-};
 
 export default function FollowRecommend() {
 	const onFollow = () => {

@@ -3,22 +3,12 @@ import 'dayjs/locale/ko';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import Link from 'next/link';
 
+import { target } from '../../../constants/dummy-constants';
 import ActionButtons from '../ActionButtons';
 import styles from './Post.module.css';
 
 dayjs.locale('ko');
 dayjs.extend(relativeTime);
-
-const target = {
-	User: {
-		id: 'danmuji',
-		nickname: '단무지',
-		image: 'https://img.hani.co.kr/imgdb/resize/2009/0203/123354307085_20090203.JPG'
-	},
-	content: '안녕하세요 단무지에요',
-	createdAt: new Date(),
-	Images: []
-};
 
 export default function Post() {
 	return (
