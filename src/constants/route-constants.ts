@@ -7,7 +7,7 @@ export enum APP_URL {
 	COMPOSE_TWEET = '/compose/tweet',
 	EXPLORE = '/explore',
 	HOME = '/home',
-	MESSAGE = '/message',
+	MESSAGES = '/messages',
 	SEARCH = '/search'
 }
 
@@ -15,6 +15,6 @@ export enum URL_SEGMENT {
 	COMPOSE = 'compose',
 	EXPLORE = 'explore',
 	HOME = 'home',
-	MESSAGE = 'message',
+	MESSAGES = 'messages',
 	SEARCH = 'search'
 }

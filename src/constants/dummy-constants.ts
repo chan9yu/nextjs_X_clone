@@ -1,19 +1,34 @@
+import { faker } from '@faker-js/faker';
+
 export const me = {
 	id: 'jebong',
 	nickname: '박제봉',
-	image:
-		'https://w7.pngwing.com/pngs/340/946/png-transparent-avatar-user-computer-icons-software-developer-avatar-child-face-heroes-thumbnail.png'
+	image: faker.image.avatar()
 };
 
 export const user = {
 	id: 'danmuji',
 	nickname: '단무지',
-	image: 'https://img.hani.co.kr/imgdb/resize/2009/0203/123354307085_20090203.JPG'
+	image: faker.image.avatar()
 };
 
 export const target = {
+	postId: 1,
 	User: user,
 	content: '안녕하세요 단무지에요',
 	createdAt: new Date(),
-	Images: []
+	Images: [] as { imageId: number; link: string }[]
+};
+
+export const messages = [
+	{ messageId: 1, roomId: 123, id: 'jebong', content: '안녕하세요.', createdAt: new Date() },
+	{ messageId: 2, roomId: 123, id: 'danmuji', content: '안녕히가세요.', createdAt: new Date() }
+];
+
+export const messageUser = {
+	...user,
+	Messages: [
+		{ roomId: 123, content: '안녕하세요.', createdAt: new Date() },
+		{ roomId: 123, content: '안녕히가세요.', createdAt: new Date() }
+	]
 };

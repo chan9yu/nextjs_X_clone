@@ -15,6 +15,7 @@ import UserFillIcon from '../../icons/UserFillIcon';
 import UserIcon from '../../icons/UserIcon';
 import NavItem from '../NavItem';
 import styles from './NavMenu.module.css';
+import TweetIcon from '../../icons/TweetIcon';
 
 export default function NavMenu() {
 	const segment = useSelectedLayoutSegment();
@@ -44,9 +45,9 @@ export default function NavMenu() {
 					<NavItem
 						actvieIcon={<MessageFillIcon />}
 						icon={<MessageIcon />}
-						isActive={segment === URL_SEGMENT.MESSAGE}
+						isActive={segment === URL_SEGMENT.MESSAGES}
 						label="쪽지"
-						to={APP_URL.MESSAGE}
+						to={APP_URL.MESSAGES}
 					/>
 				</li>
 				{me?.id && (
@@ -62,7 +63,8 @@ export default function NavMenu() {
 				)}
 			</ul>
 			<Link href={APP_URL.COMPOSE_TWEET} className={styles.postButton}>
-				게시하기
+				<span>게시하기</span>
+				<TweetIcon />
 			</Link>
 		</nav>
 	);

@@ -5,8 +5,8 @@ import type { ChildrenProps } from '../../@types/common';
 import FollowSection from '../../components/afterLogin/FollowSection';
 import LogoutButton from '../../components/afterLogin/LogoutButton';
 import NavMenu from '../../components/afterLogin/NavMenu';
+import RightSearchZone from '../../components/afterLogin/RightSearchZone';
 import TrendSection from '../../components/afterLogin/TrendSection';
-import SearchIcon from '../../components/icons/SearchIcon';
 import XLogoIcon from '../../components/icons/XLogoIcon';
 import { APP_URL } from '../../constants/route-constants';
 import styles from './layout.module.css';
@@ -35,12 +35,7 @@ export default function AfterLoginLayout({ children, modal }: AfterLoginLayoutPr
 				<div className={styles.rightSectionInner}>
 					<main className={styles.main}>{children}</main>
 					<section className={styles.rightSection}>
-						<div style={{ marginBottom: 60, width: 'inherit' }}>
-							<form className={styles.search}>
-								<SearchIcon />
-								<input type="search" />
-							</form>
-						</div>
+						<RightSearchZone />
 						<TrendSection />
 						<FollowSection />
 					</section>
